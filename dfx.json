@@ -1,0 +1,28 @@
+{
+  "canisters": {
+    "icp_token_wallet": {
+      "candid": "src/icp_token_wallet.did",
+      "package": "icp_token_wallet",
+      "type": "rust"
+    },
+    "icp_token_wallet_assets": {
+      "dependencies": [
+        "icp_token_wallet"
+      ],
+      "frontend": {
+        "entrypoint": "frontend/assets/index.html"
+      },
+      "source": [
+        "frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}
